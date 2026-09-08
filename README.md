@@ -1,2 +1,18 @@
-# student-grade-calculator
-A PHP-based student grade calculator that accepts student details and marks for five subjects, then calculates total, percentage, grade (A-F), and pass/fail status.
+$total = $maths + $science + $english + $computer + $hindi;
+$percentage = $total / 5;
+
+if ($percentage >= 80) {
+    $grade = "A";
+} elseif ($percentage >= 70) {
+    $grade = "B";
+} elseif ($percentage >= 60) {
+    $grade = "C";
+} elseif ($percentage >= 50) {
+    $grade = "D";
+} elseif ($percentage >= 40) {
+    $grade = "E";
+} else {
+    $grade = "F";
+}
+
+$result = ($percentage >= 40) ? "Pass" : "Fail";
